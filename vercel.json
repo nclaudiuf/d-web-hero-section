@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"build": "web-intro-section build --output public"
+		"build": "dist/index.html build --output public"
 	},
 	"redirects": [
 		{
