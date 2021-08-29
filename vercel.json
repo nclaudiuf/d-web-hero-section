@@ -1,0 +1,34 @@
+{
+	"redirects": [
+		{
+			"source": "dist/",
+			"destination": "/404",
+			"statusCode": 404
+		},
+		{
+			"source": "dist//static",
+			"destination": "/404",
+			"statusCode": 404
+		},
+		{
+			"source": "dist/static/([A-z0-9_-]{21})",
+			"destination": "/404",
+			"statusCode": 404
+		},
+		{
+			"source": "dist/static/chunks",
+			"destination": "/404",
+			"statusCode": 404
+		},
+		{
+			"source": "dist/src/css",
+			"destination": "/404",
+			"statusCode": 404
+		},
+		{
+			"source": "dist/assets/",
+			"destination": "/404",
+			"statusCode": 404
+		}
+	]
+}
