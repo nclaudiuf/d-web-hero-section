@@ -1,0 +1,162 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './theme.css';
+
+/* Functional */
+*:focus {
+	box-shadow: none !important;
+	outline: none;
+}
+*:hover {
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+.bg-light {
+	background-color: #fafafa !important;
+}
+
+.hide-lg,
+.hide-md,
+.hide-sm {
+	display: inherit;
+}
+@media only screen and (max-width: 992px) {
+	.hide-lg {
+		display: none !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.hide-md {
+		display: none !important;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.hide-sm {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.navbar-light {
+		background-color: #ffd717 !important;
+	}
+	.navbar-light .navbar-toggler-icon {
+		background: none;
+	}
+}
+
+.navbar-brand .avatar {
+	width: 60%;
+}
+
+.fs-upper {
+	font-size: 0.75rem;
+}
+
+.floating-el {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	top: 100%;
+	left: 0;
+}
+/* Hero */
+#hero {
+	background-image: linear-gradient(
+		to bottom right,
+		rgba(251, 252, 253, 1),
+		rgba(229, 229, 229, 0.5)
+	) !important;
+	background-image: #fbfcfd;
+}
+
+.hero-image-overlay {
+	z-index: -1;
+	position: absolute;
+	display: inline-block;
+	width: 90%;
+	height: 90%;
+	top: 12%;
+	right: 0;
+	background-image: url('https://res.cloudinary.com/dwddqgedw/image/upload/v1629847897/Profile_Pic-removebg_qlmntv.png');
+	background-size: contain;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	opacity: 0.35;
+}
+
+@media only screen and (max-width: 768px) {
+	.hero-image-overlay {
+		opacity: 0.15;
+	}
+}
+
+.hover-effect,
+.hover-effect:hover {
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+a.hover-effect:hover,
+img.hover-effect:hover {
+	opacity: 0.6;
+}
+
+.wave-line {
+	background: url('https://res.cloudinary.com/dwddqgedw/image/upload/v1629735666/Studio%20Branding/Wave_line_primary.svg')
+		no-repeat;
+	height: 18px;
+	width: 96%;
+	background-position: center center;
+	background-attachment: cover;
+	background-size: 100% 100%;
+	display: block;
+	opacity: 0.95;
+}
+
+/* Client Section */
+.s-clients ul li img {
+	opacity: 0.6;
+	width: 100% !important;
+	height: 36px !important;
+}
+.s-clients ul li {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media only screen and (max-width: 576px) {
+	.s-clients ul li img {
+		width: 30%;
+		height: 40%;
+	}
+}
+
+/* Image Effect */
+#follow {
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+	display: none;
+}
+
+/* Parallax */
+
+.jarallax {
+	position: relative;
+	z-index: 0;
+}
+.jarallax > .jarallax-img {
+	position: absolute;
+	object-fit: cover;
+	/* support for plugin https://github.com/bfred-it/object-fit-images */
+	font-family: 'object-fit: cover;';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}

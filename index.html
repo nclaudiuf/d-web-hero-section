@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="" />
+		<meta name="author" content="Claudiu Furca" />
+		<title>Product & Service Design | Design Sprint</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./src/css/styles.css" />
+	</head>
+
+	<body>
+		<div class="loader">
+			<div class="loading-animation"></div>
+		</div>
+
+		<div class="navbar-container">
+			<nav
+				class="navbar navbar-expand-lg navbar-light pb-0 border-bottom-0"
+				data-overlay=""
+				data-sticky="top"
+			>
+				<div class="container">
+					<a class="navbar-brand hover-effect" href="index.html">
+						<img
+							class="avatar avatar-lg"
+							src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630054584/Studio%20Branding/CF-Logo-Dark-SVG_fh9sbl.svg"
+							alt="Leap"
+						/>
+					</a>
+					<button
+						class="navbar-toggler collapsed hover-effect"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarCollapse"
+						aria-controls="navbarCollapse"
+						aria-expanded="false"
+						aria-label="Toggle Nav Mobile"
+					>
+						<span class="navbar-toggler-icon"
+							><i class="fas fa-times text-dark fs-1"></i
+						></span>
+					</button>
+					<div
+						id="navbarCollapse"
+						class="collapse navbar-collapse col-lg-5 col-12 justify-content-lg-between"
+					>
+						<div class="me-sm-3 me-0 pb-2 pb-lg-0">
+							<ul class="navbar-nav me-auto mb-2 mb-md-0">
+								<li class="nav-item dropdown">
+									<a
+										href="https://www.notion.so/e7ce16511e03416684a98c96536a151c?v=a1bc0f7366b74bb987305b962ed124e1"
+										class="nav-link dropdown-toggle text-secondary text-uppercase fs-6"
+										data-toggle="dropdown-grid"
+										aria-expanded="false"
+										aria-haspopup="true"
+										data-image
+										>Work Cases</a
+									>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										href="https://www.notion.so/About-Claudiu-b9c19cc9a05c432687f1bf233fbd7bb9"
+										class="nav-link dropdown-toggle text-secondary text-uppercase"
+										data-toggle="dropdown-grid"
+										aria-expanded="false"
+										aria-haspopup="true"
+										data-image
+										>About</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<button
+							type="button"
+							id="cta-btn"
+							class="btn btn-link text-dark ps-0 text-uppercase"
+							data-bs-toggle="modal"
+							data-bs-target="#cta-modal"
+						>
+							👉 Get in Touch
+						</button>
+					</div>
+				</div>
+			</nav>
+
+			<!-- <div id="follow"><img src="https://placekitten.com/96/140" /><br>Kitteh</br>
+			</div> -->
+		</div>
+
+		<!-- Hero Section -->
+		<div
+			id="hero"
+			data-overlay=""
+			class="text-light position-relative overflow-hidden mb-4"
+		>
+			<div class="hero-image-overlay hover-effect"></div>
+			<section
+				class="min-vh-100 overflow-hidden d-flex flex-column justify-content-center mb-5"
+			>
+				<div class="container">
+					<div class="row justify-content-center text-center align-items-start mt-5">
+						<div
+							class="col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate"
+							data-aos="fade-up"
+							data-aos-delay="500"
+						>
+							<div class="wave-line d-flex justify-content-center col-12"></div>
+							<h1 class="display-3 text-secondary user-select-none mt-2">
+								Grow <span class="shadow-effect">Solid</span> Products & Systems,
+								<span class="shadow-effect">Faster.</span>
+							</h1>
+							<div class="mb-sm mb-3 mt-sm-4 mt-2">
+								<p class="lead text-secondary-light user-select-none">
+									I help SaaS companies and startups turn complex technology
+									<br class="hide-sm" />
+									into <b>simple</b> products and systems, <b>for humans</b>.
+								</p>
+							</div>
+							<div class="btn-group mt-4">
+								<div
+									class="jarallax floating-el"
+									data-jarallax-element="-100"
+									data-jarallax="scroll-opacity"
+									data-type="scroll-opacity"
+									data-speed="1"
+								>
+									<a
+										href="https://calendly.com/claudiu-furca/30min"
+										class="btn btn-lg btn-primary shadow-sm"
+										>Schedule Your Free Call</a
+									>
+								</div>
+								<!-- <div
+								class="jarallax floating-el"
+								data-jarallax-element="-100"
+								data-jarallax="scroll-opacity"
+								data-type="scroll-opacity"
+								data-speed="1"
+							>
+								<a
+									href="https://calendly.com/claudiu-furca/30min"
+									class="btn btn-lg btn-outline-primary shadow-sm mx-1"
+									>See my Process</a
+								>
+							</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Animated Clients Banner -->
+		<section
+			class="card border-light shadow-sm s-clients col-10 me-auto ms-auto bg-light pt-0 pb-0"
+			style="margin-top: -80px; z-index: 9;"
+		>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<ul
+							class="d-flex flex-wrap justify-content-center align-items-center list-unstyled mt-4 mb-4"
+						>
+							<li class="col-lg-3 col-md-4 col-sm-2 col-12 mb-sm-3 mb-2">
+								<h4 class="text-dark-50 text-center">Previous Clients</h4>
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate mb-3"
+								data-aos="fade-up"
+								data-aos-delay="100"
+							>
+								<img src="/assets/clients/Aston Martin Logo (Dark).svg" />
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
+								<img src="/assets/clients/BMW Logo.svg" />
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
+								<img src="/assets/clients/Heineken Logo.svg" />
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
+								<img src="/assets/clients/N26 Logo (Dark).svg" />
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate"
+								data-aos="fade-up"
+								data-aos-delay="400"
+							>
+								<img height="40" src="/assets/clients/ApTap Logo.svg" />
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
+								<img src="/assets/clients/Trivver Logo (Dark).svg" />
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate hide-md"
+								data-aos="fade-up"
+								data-aos-delay="400"
+							>
+								<img height="48" src="/assets/clients/24HourFitness Logo.svg" />
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate hide-md"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
+								<img src="/assets/clients/Luvostore Logo.svg" />
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate hide-lg"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
+								<img width="80" src="/assets/clients/Dreamcar Logo.svg" />
+							</li>
+							<li
+								class="col-md-2 col-sm-3 col-4 aos-init aos-animate hide-lg"
+								data-aos="fade-up"
+								data-aos-delay="300"
+							>
+								<img src="/assets/clients/Izinga Logo (Horizontal).svg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Text Banner -->
+		<section class="text-center" id="demos">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<h2 class="h1">
+							Design for
+							<span class="badge bg-primary text-wrap text-uppercase fs-3">Your</span>
+							Business Impact
+						</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="notion-page">
+			<div class="ratio ratio-16x9">
+				<iframe class="overflow-hidden" src="https://claudiu.design/design-shots" title="Design Shots" scrolling="no"></iframe>
+			</div>
+		<section>
+
+
+		<!-- CTA Overlay Modal Card -->
+		<div
+			class="modal fade"
+			id="cta-modal"
+			tabindex="-1"
+			aria-labelledby="cta-modalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div
+						class="modal-header d-flex align-items-start p-2 mt-2 border-bottom-0"
+					>
+						<div class="col-8 d-flex justify-content-end mt-1">
+							<h3 class="modal-title lh-lg" id="cta-modalLabel ">
+								Contact Card Details
+							</h3>
+						</div>
+						<div class="col-4 d-flex justify-content-end">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div
+							class="d-flex flex-column justify-content-center ps-4 pe-4 pt-1 pb-2"
+						>
+							<h5 class="card-subtitle text-uppercase text-secondary-light fs-upper">
+								Claudiu Furca
+							</h5>
+							<h4 class="card-title mb-2">Product / Service Designer</h4>
+							<p class="card-text user-select-none">
+								Product & System Builder. Hands-on User Centred Design, Design Sprint &
+								Growth Hacking Workshops. <br />
+								I create, prototypes, test & validate the solution to your biggest
+								challenges in just 1 week.
+							</p>
+						</div>
+
+						<div
+							class="d-flex flex-lg-row flex-column-reverse justify-content-center align-items-start p-lg-4 p-2"
+						>
+							<div
+								class="col-xl-7 col-lg-6 col-12 d-flex justify-content-lg-start justify-content-center"
+							>
+								<ul class="col-lg-10 col-9 list-group list-group-flush">
+									<li class="list-group-item d-flex align-items-center lh-sm">
+										<span
+											class="badge rounded-pill me-sm-4 me-2"
+											style="margin-top: -12px;"
+										>
+											<i class="fa-regular far fa-clock fs-4 text-secondary"></i>
+										</span>
+										<div>
+											<span class="fw-bold text-uppercase fs-upper user-select-none"
+												>Time Zone</span
+											>
+											<p class="text-secondary-light fs-6 pt-1">Thailand, UTC +7</p>
+											<p></p>
+										</div>
+									</li>
+									<li class="list-group-item d-flex align-items-center lh-sm">
+										<span
+											class="badge rounded-pill me-sm-4 me-2"
+											style="margin-top: -12px;"
+											><i class="far fa-envelope fs-4 text-secondary"></i
+										></span>
+										<div>
+											<span class="fw-bold text-uppercase fs-upper user-select-none"
+												>Email</span
+											>
+											<p class="text-secondary-light fs-6 pt-1">claudiu.furca@gmail.com</p>
+											<p></p>
+										</div>
+									</li>
+									<li class="list-group-item d-flex align-items-center lh-sm">
+										<span
+											class="badge rounded-pill me-sm-4 me-2"
+											style="margin-top: -12px;"
+											><i class="far fa-user fs-4 text-secondary"></i
+										></span>
+										<div>
+											<span class="fw-bold text-uppercase fs-upper user-select-none"
+												>Skype</span
+											>
+											<p class="text-muted fs-6 pt-1">
+												<a
+													class="text-secondary"
+													href="https://join.skype.com/invite/oRJMPQkWpSEJ"
+													>claudiu.furca (link)</a
+												>
+											</p>
+											<p></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-xl-5 col-lg-6 col-12 d-flex justify-content-center mb-1">
+								<img
+									src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630095164/Studio%20Branding/CF-QR-Code-Contact-Details_foizvp.png"
+									class="rounded-start pb-2"
+									alt="Conact Card Details QR Code"
+									height="256"
+									width="256"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-flex flex-md-row flex-column justify-content-center mb-5">
+						<div
+							class="d-inline-flex flex-row justify-content-center align-items-center col-lg-6 col-12 mb-lg-0 mb-3"
+						>
+							<a
+								class="btn btn-primary btn-lg p-2 col-7"
+								href="https://calendly.com/claudiu-furca/30min"
+							>
+								Book Meeting
+							</a>
+						</div>
+						<div
+							class="d-inline-flex flex-row justify-content-center align-items-center col-lg-5 col-12"
+						>
+							<div class="col-auto">
+								<ul class="social-links nav">
+									<li class="nav-item">
+										<a
+											href="https://www.linkedin.com/in/claudiu-furca/"
+											class="nav-link text-secondary-light"
+										>
+											<i class="fab fa-linkedin fs-2"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a
+											href="https://twitter.com/nclaudiuf"
+											class="nav-link text-secondary-light"
+										>
+											<i class="fab fa-twitter fs-2"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a
+											href="https://claudiu-furca.slack.com"
+											class="nav-link text-secondary-light"
+										>
+											<i class="fab fa-slack fs-2"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="src/js/index.js"></script>
+		<!-- Jarallax -->
+		<script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+	</body>
+</html>
