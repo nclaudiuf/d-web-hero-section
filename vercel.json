@@ -1,4 +1,7 @@
 {
+	"scripts": {
+		"build": "web-intro-section build --output public"
+	},
 	"redirects": [
 		{
 			"source": "dist/",
