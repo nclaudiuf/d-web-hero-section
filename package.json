@@ -9,13 +9,10 @@
   },
   "dependencies": {
     "@babel/core": "7.15.0",
-    "@fortawesome/fontawesome-free": "5.15.4",
-    "@fortawesome/free-regular-svg-icons": "5.15.4",
     "@popperjs/core": "2.9.3",
     "aos": "2.3.4",
     "bootstrap": "5.1.0",
     "imagesloaded": "4.1.4",
-    "inter-ui": "3.19.3",
     "jarallax": "1.12.7",
     "jquery": "3.6.0",
     "parcel-bundler": "1.12.5"

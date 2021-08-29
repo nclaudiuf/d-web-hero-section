@@ -71,18 +71,18 @@ function GetInTouch() {
 }
 
 // TODO Source https://codepen.io/AlainBarrios/pen/XWWEPzR
-function ShowMediaOnHover() {
-	const tigers = document.querySelectorAll('.navbar-nav li a');
-	const imageCard = document.querySelectorAll('#follow')[0];
+// function ShowMediaOnHover() {
+// 	const tigers = document.querySelectorAll('.navbar-nav li a');
+// 	const imageCard = document.querySelectorAll('#follow')[0];
 
-	tigers.forEach(function (triger, index) {
-		triger.addEventListener('mouseenter', e => {
-			imageCard.style.display = 'block';
-			imageCard.style.left = e.pageX;
-			imageCard.style.top = e.pageY;
-		});
-		triger.addEventListener('mouseleave', e => {
-			imageCard.style.display = 'none';
-		});
-	});
-}
+// 	tigers.forEach(function (triger, index) {
+// 		triger.addEventListener('mouseenter', e => {
+// 			imageCard.style.display = 'block';
+// 			imageCard.style.left = e.pageX;
+// 			imageCard.style.top = e.pageY;
+// 		});
+// 		triger.addEventListener('mouseleave', e => {
+// 			imageCard.style.display = 'none';
+// 		});
+// 	});
+// }
