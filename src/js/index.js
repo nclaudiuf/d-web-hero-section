@@ -1,4 +1,4 @@
-// import $ from 'jquery';
+import $ from 'jquery';
 // import Popper from 'popper.js';
 import 'bootstrap';
 import {jarallax, jarallaxElement} from 'jarallax'; //Wiki & Credits: https://github.com/nk-o/jarallax
@@ -17,8 +17,8 @@ jarallax(document.querySelectorAll('[data-jarallax-element]'));
 //ShowMediaOnHover();
 
 function init() {
-	// window.$ = $;
-	// window.jQuery = $;
+	window.$ = $;
+	window.jQuery = $;
 	// window.Popper = Popper;
 	// window.imagesloaded = imagesloaded;
 }
