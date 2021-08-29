@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import Popper from 'popper.js';
+// import Popper from 'popper.js';
 import 'bootstrap';
 import {jarallax, jarallaxElement} from 'jarallax'; //Wiki & Credits: https://github.com/nk-o/jarallax
 import 'aos';
@@ -19,7 +19,7 @@ jarallax(document.querySelectorAll('[data-jarallax-element]'));
 function init() {
 	window.$ = $;
 	window.jQuery = $;
-	window.Popper = Popper;
+	// window.Popper = Popper;
 	// window.imagesloaded = imagesloaded;
 }
 

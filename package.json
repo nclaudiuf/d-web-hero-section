@@ -1,26 +1,25 @@
 {
-	"name": "design-portfolio-web",
-	"version": "1.0.0",
-	"description": "Claudiu Furca Product / Service Designer Portfolio",
-	"main": "index.html",
-	"scripts": {
-		"start": "parcel index.html --open",
-		"build": "parcel build index.html"
-	},
-	"dependencies": {
-		"@fortawesome/fontawesome-free": "5.15.4",
-		"@fortawesome/free-regular-svg-icons": "5.15.4",
-		"@popperjs/core": "2.9.3",
-		"aos": "2.3.4",
-		"bootstrap": "5.0.2",
-		"imagesloaded": "4.1.4",
-		"jarallax": "1.12.7",
-		"jquery": "3.6.0",
-		"parcel": "2.0.0-rc.0",
-		"popper.js": "2.0.0-next.4"
-	},
-	"devDependencies": {
-		"@babel/core": "7.2.0"
-	},
-	"keywords": []
+  "name": "design-portfolio-web",
+  "version": "1.0.0",
+  "description": "Claudiu Furca Product / Service Designer Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.4",
+    "@fortawesome/free-regular-svg-icons": "5.15.4",
+    "@popperjs/core": "2.9.3",
+    "aos": "2.3.4",
+    "bootstrap": "5.0.2",
+    "imagesloaded": "4.1.4",
+    "jarallax": "1.12.7",
+    "jquery": "3.6.0",
+    "parcel": "2.0.0-rc.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0"
+  },
+  "keywords": []
 }
