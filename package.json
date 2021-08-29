@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Claudiu Furca Product / Service Designer Portfolio",
 	"main": "index.html",
+	"source": "index.html",
 	"scripts": {
 		"start": "parcel index.html --open",
 		"build": "parcel build index.html"
@@ -14,8 +15,10 @@
 		"bootstrap": "5.1.0",
 		"imagesloaded": "4.1.4",
 		"jarallax": "1.12.7",
-		"jquery": "3.6.0",
-		"parcel-bundler": "1.12.5"
+		"jquery": "3.6.0"
+	},
+	"devDependencies": {
+		"parcel": "latest"
 	},
 	"keywords": []
 }
