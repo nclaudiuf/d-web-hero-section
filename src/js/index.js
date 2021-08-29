@@ -1,6 +1,7 @@
 import $ from 'jquery';
 // import Popper from 'popper.js';
 import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {jarallax, jarallaxElement} from 'jarallax'; //Wiki & Credits: https://github.com/nk-o/jarallax
 import 'aos';
 //import imagesLoaded from 'imagesloaded';
