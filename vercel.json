@@ -1,8 +1,0 @@
-{
-	"name": "web-intro-section",
-	"version": "1.0.0",
-	"description": "Claudiu Furca Product / Service Designer Portfolio",
-	"scripts": {
-		"build": "web-intro-section build --output public"
-	}
-}
