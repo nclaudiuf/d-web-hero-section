@@ -23,9 +23,12 @@
 		/>
 		<script>
 			window.onload = event => {
-				document.querySelectorAll(
+				const notionHeader = document.querySelectorAll(
 					'.notion-frame > .notion-scroller '
-				)[0].firstElementChild.style = 'display: none !important;';
+				);
+				if (notionHeader.length > 0) {
+					notionHeader[0].firstElementChild.style = 'display: none !important;';
+				}
 			};
 		</script>
 		<style>
