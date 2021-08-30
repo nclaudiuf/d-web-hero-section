@@ -1,22 +1,20 @@
 {
-	"name": "web-hero-section",
-	"version": "1.0.0",
-	"description": "Claudiu Furca Product / Service Designer Portfolio ",
-	"scripts": {
-		"start": "parcel index.html --open",
-		"build": "parcel build index.html"
-	},
-	"dependencies": {
-		"@babel/core": "7.15.0",
-		"@popperjs/core": "2.9.3",
-		"aos": "2.3.4",
-		"bootstrap": "5.1.0",
-		"imagesloaded": "4.1.4",
-		"jarallax": "1.12.7",
-		"jquery": "3.6.0"
-	},
-	"devDependencies": {
-		"parcel": "latest"
-	},
-	"keywords": []
+  "name": "web-hero-section",
+  "version": "1.0.0",
+  "description": "Claudiu Furca Product / Service Designer Portfolio ",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@babel/core": "7.15.0",
+    "@popperjs/core": "2.9.3",
+    "aos": "2.3.4",
+    "bootstrap": "5.1.0",
+    "jquery": "3.6.0"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "keywords": []
 }
