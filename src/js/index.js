@@ -1,27 +1,16 @@
 import $ from 'jquery';
-// import Popper from 'popper.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {jarallax, jarallaxElement} from 'jarallax'; //Wiki & Credits: https://github.com/nk-o/jarallax
 import 'aos';
-//import imagesLoaded from 'imagesloaded';
 
 init();
 StyleModalCard();
 Make3ShadowToText();
 GetInTouch();
-// Add Element Extension.
-jarallaxElement();
-// Add Jarallax on DOM Node.
-jarallax(document.querySelectorAll('[data-jarallax-element]'));
-
-//ShowMediaOnHover();
 
 function init() {
 	window.$ = $;
 	window.jQuery = $;
-	// window.Popper = Popper;
-	// window.imagesloaded = imagesloaded;
 }
 
 function StyleModalCard() {
@@ -70,20 +59,3 @@ function GetInTouch() {
 		overlayImg.style = 'opacity: 0.35';
 	});
 }
-
-// TODO Source https://codepen.io/AlainBarrios/pen/XWWEPzR
-// function ShowMediaOnHover() {
-// 	const tigers = document.querySelectorAll('.navbar-nav li a');
-// 	const imageCard = document.querySelectorAll('#follow')[0];
-
-// 	tigers.forEach(function (triger, index) {
-// 		triger.addEventListener('mouseenter', e => {
-// 			imageCard.style.display = 'block';
-// 			imageCard.style.left = e.pageX;
-// 			imageCard.style.top = e.pageY;
-// 		});
-// 		triger.addEventListener('mouseleave', e => {
-// 			imageCard.style.display = 'none';
-// 		});
-// 	});
-// }

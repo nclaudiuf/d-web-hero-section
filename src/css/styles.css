@@ -36,7 +36,8 @@
 
 @media only screen and (max-width: 992px) {
 	.navbar-light {
-		background-color: #ffd717 !important;
+		background-color: rgba(255, 215, 23, 0.125) !important;
+		background-color: rgb(255, 215, 23);
 	}
 	.navbar-light .navbar-toggler-icon {
 		background: none;
@@ -51,14 +52,6 @@
 	font-size: 0.75rem;
 }
 
-.floating-el {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	top: 100%;
-	left: 0;
-}
 /* Hero */
 #hero {
 	background-image: linear-gradient(
@@ -111,49 +104,4 @@ img.hover-effect:hover {
 	background-size: 100% 100%;
 	display: block;
 	opacity: 0.95;
-}
-
-/* Client Section */
-.s-clients ul li img {
-	opacity: 0.6;
-	width: 100% !important;
-	height: 36px !important;
-}
-.s-clients ul li {
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-@media only screen and (max-width: 576px) {
-	.s-clients ul li img {
-		width: 30%;
-		height: 40%;
-	}
-}
-
-/* Image Effect */
-#follow {
-	position: absolute;
-	text-align: center;
-	z-index: 99;
-	display: none;
-}
-
-/* Parallax */
-
-.jarallax {
-	position: relative;
-	z-index: 0;
-}
-.jarallax > .jarallax-img {
-	position: absolute;
-	object-fit: cover;
-	/* support for plugin https://github.com/bfred-it/object-fit-images */
-	font-family: 'object-fit: cover;';
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
 }
