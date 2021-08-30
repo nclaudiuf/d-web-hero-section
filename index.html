@@ -22,9 +22,11 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		/>
 		<script>
-			document.querySelectorAll(
-				'.notion-frame > .notion-scroller '
-			)[0].firstElementChild.style = 'display: none !important;';
+			window.onload = event => {
+				document.querySelectorAll(
+					'.notion-frame > .notion-scroller '
+				)[0].firstElementChild.style = 'display: none !important;';
+			};
 		</script>
 		<style>
 			.notion-page-content .notion-selectable:first-child {
