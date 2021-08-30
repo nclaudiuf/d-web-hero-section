@@ -21,20 +21,6 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		/>
-		<script>
-			const notionHeader = document.querySelectorAll(
-				'.notion-frame > .notion-scroller '
-			);
-			if (notionHeader.length > 0) {
-				notionHeader[0].firstElementChild.style = 'display: none !important;';
-			}
-		</script>
-		<style>
-			.notion-page-content .notion-selectable:first-child {
-				width: 100vw !important;
-				max-width: 100vw !important;
-			}
-		</style>
 	</head>
 
 	<body class="overflow-hidden">
@@ -332,5 +318,48 @@
 				</div>
 			</div>
 		</div>
+
+		<script>
+			// window.onload = function () {}
+
+			const sections = document.querySelectorAll('.notion-frame .notion-scroller');
+			if (sections.length >= 0 && sections != undefined) {
+				sections.forEach(section => {
+					if (
+						section.className.includes('vertical horizontal') &&
+						section.className != undefined
+					) {
+						var childrenEl = section.children;
+
+						for (var i in childrenEl) {
+							if (childrenEl[i].className != undefined) {
+								if (childrenEl[i].className == '') {
+									childrenEl[i].style = 'display: none !important;'; // hide notion header & cover
+								}
+								if (childrenEl[i].className.includes('notion-page-content')) {
+									var pageElems = childrenEl[i].children;
+
+									for (var j in pageElems) {
+										if (pageElems[j].className != undefined) {
+											if (
+												pageElems[j].className.includes('notion-embed-block') ||
+												pageElems[j].className.includes('notion-image-block')
+											) {
+												// full page image blocks & embeds
+												console.log(pageElems[j]);
+												pageElems[j].style.width = 'width: 100vw !important;';
+												pageElems[j].style.maxWidth = 'max-width: 100vw !important;';
+												// cssText = `
+												// 	width: 100vw !important; max-width: 100vw !important;`;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				});
+			}
+		</script>
 	</body>
 </html>
