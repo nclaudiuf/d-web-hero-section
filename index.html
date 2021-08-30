@@ -8,7 +8,6 @@
 		<meta name="author" content="Claudiu Furca" />
 		<title>Product & Service Design | Design Sprint</title>
 
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
 			rel="stylesheet"
@@ -318,43 +317,5 @@
 				</div>
 			</div>
 		</div>
-
-		<script>
-			const sections = document.querySelectorAll('.notion-frame .notion-scroller');
-			if (sections.length >= 0 && sections != undefined) {
-				sections.forEach(section => {
-					if (
-						section.className.includes('vertical horizontal') &&
-						section.className != undefined
-					) {
-						var childrenEl = section.children;
-
-						for (var i in childrenEl) {
-							if (childrenEl[i].className != undefined) {
-								if (childrenEl[i].className == '') {
-									childrenEl[i].style = 'display: none !important;'; // hide notion header & cover
-								}
-								if (childrenEl[i].className.includes('notion-page-content')) {
-									var pageElems = childrenEl[i].children;
-
-									for (var j in pageElems) {
-										if (pageElems[j].className != undefined) {
-											if (
-												pageElems[j].className.includes('notion-embed-block') ||
-												pageElems[j].className.includes('notion-image-block')
-											) {
-												// full page image blocks & embeds
-												pageElems[j].style.width = 'width: 100vw !important;';
-												pageElems[j].style.maxWidth = 'max-width: 100vw !important;';
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				});
-			}
-		</script>
 	</body>
 </html>
