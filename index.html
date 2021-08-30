@@ -22,14 +22,12 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		/>
 		<script>
-			window.onload = function () {
-				const notionHeader = document.querySelectorAll(
-					'.notion-frame > .notion-scroller '
-				);
-				if (notionHeader.length > 0) {
-					notionHeader[0].firstElementChild.style = 'display: none !important;';
-				}
-			};
+			const notionHeader = document.querySelectorAll(
+				'.notion-frame > .notion-scroller '
+			);
+			if (notionHeader.length > 0) {
+				notionHeader[0].firstElementChild.style = 'display: none !important;';
+			}
 		</script>
 		<style>
 			.notion-page-content .notion-selectable:first-child {
