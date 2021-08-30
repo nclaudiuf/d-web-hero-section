@@ -54,12 +54,12 @@
 
 /* Hero */
 #hero {
-	background-image: linear-gradient(
+	background: linear-gradient(
 		to bottom right,
 		rgba(251, 252, 253, 1),
 		rgba(229, 229, 229, 0.5)
 	) !important;
-	background-image: #fbfcfd;
+	background: #fbfcfd;
 }
 
 .hero-image-overlay {
