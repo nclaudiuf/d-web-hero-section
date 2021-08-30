@@ -20,57 +20,6 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		/>
-
-		//document.querySelector('.notion-frame .notion-topbar-mobile').style.display
-		= "none"; //document.querySelector('.notion-page-content').style.padding =
-		"0";
-
-		<style>
-			.notion-page-content {
-				padding: 0 !important;
-			}
-			.notion-frame .notion-topbar-mobile {
-				display: none !important;
-			}
-			.notion-page-content .notion-selectable {
-				width: 100vw !important;
-				max-width: 100vw !important;
-				padding-left: calc(72px + env(safe-area-inset-left)) !important;
-				padding-right: calc(72px + env(safe-area-inset-right)) !important;
-			}
-			.notion-page-content .notion-selectable.notion-embed-block,
-			.notion-page-content .notion-selectable.notion-image-block {
-				padding-right: 0 !important;
-				padding-left: 0 !important;
-			}
-			.notion-scroller.vertical.horizontal div:not(.notion-page-content),
-			.notion-scroller.vertical.horizontal div:not(.notion-presence-container) {
-				display: none !important;
-			}
-		</style>
-		<script>
-			document.addEventListener('load', function () {
-				const notionContent = document.querySelector(
-					'.notion-frame .notion-scroller.vertical.horizontal'
-				);
-				if (notionContent != undefined) {
-					if (
-						notionContent.className.includes('vertical horizontal') &&
-						notionContent.className != undefined
-					) {
-						var childrenEl = notionContent.children;
-
-						for (var i in childrenEl) {
-							if (childrenEl[i].className != undefined) {
-								if (childrenEl[i].className == '') {
-									childrenEl[i].style = 'display: none !important;'; // hide notion header & cover
-								}
-							}
-						}
-					}
-				}
-			});
-		</script>
 	</head>
 
 	<body class="overflow-hidden">
