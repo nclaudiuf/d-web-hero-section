@@ -94,7 +94,8 @@
 	transition: opacity 0.3s ease;
 }
 a.hover-effect:hover,
-img.hover-effect:hover {
+img.hover-effect:hover,
+button.hover-effect:hover {
 	opacity: 0.6;
 }
 
