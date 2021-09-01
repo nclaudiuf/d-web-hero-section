@@ -28,23 +28,25 @@ function Make3ShadowToText() {
 
 	const allText = hero.querySelectorAll('span.shadow-effect');
 
-	allText.forEach(function ApplyShadowEffect(text, index) {
-		function shadow(e) {
-			const {offsetWidth: width, offsetHeight: height} = hero;
-			let {offsetX: x, offsetY: y} = e;
+	if (allText.length > 0 && allText.length !== undefined) {
+		allText.forEach(function ApplyShadowEffect(text, index) {
+			function shadow(e) {
+				const {offsetWidth: width, offsetHeight: height} = hero;
+				let {offsetX: x, offsetY: y} = e;
 
-			if (this !== e.target) {
-				x = x + e.target.offsetLeft;
-				y = y + e.target.offsetTop;
+				if (this !== e.target) {
+					x = x + e.target.offsetLeft;
+					y = y + e.target.offsetTop;
+				}
+
+				const xWalk = Math.round((x / width) * walk - walk / 2);
+				const yWalk = Math.round((y / height) * walk - walk / 2);
+
+				text.style.textShadow = `${xWalk}px ${yWalk}px 0 rgba(0,0,0,0.25)`;
 			}
-
-			const xWalk = Math.round((x / width) * walk - walk / 2);
-			const yWalk = Math.round((y / height) * walk - walk / 2);
-
-			text.style.textShadow = `${xWalk}px ${yWalk}px 0 rgba(0,0,0,0.25)`;
-		}
-		hero.addEventListener('mousemove', shadow);
-	});
+			hero.addEventListener('mousemove', shadow);
+		});
+	}
 }
 
 function GetInTouch() {

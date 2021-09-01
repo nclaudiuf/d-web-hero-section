@@ -13,24 +13,42 @@
 	background-color: #fafafa !important;
 }
 
-.hide-lg,
-.hide-md,
-.hide-sm {
-	display: inherit;
+@media only screen and (min-width: 576px) {
+	.display-sm-3 {
+		font-size: 4.5rem;
+		font-weight: 600;
+		line-height: 1.2;
+	}
 }
+
+.show-lg,
+.show-md,
+.show-sm {
+	display: none !important;
+}
+
 @media only screen and (max-width: 992px) {
 	.hide-lg {
 		display: none !important;
+	}
+	.show-lg {
+		display: inline-flex !important;
 	}
 }
 @media only screen and (max-width: 768px) {
 	.hide-md {
 		display: none !important;
 	}
+	.show-md {
+		display: inline-flex !important;
+	}
 }
 @media only screen and (max-width: 576px) {
 	.hide-sm {
 		display: none !important;
+	}
+	.show-sm {
+		display: inline-flex !important;
 	}
 }
 
