@@ -7,19 +7,6 @@
 		<meta name="description" content="" />
 		<meta name="author" content="Claudiu Furca" />
 		<title>Product & Service Design | Design Sprint</title>
-
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-			rel="stylesheet"
-		/>
-
-		<script type="module" src="src/js/index.js"></script>
-		<link rel="stylesheet" type="text/css" href="./src/css/theme.css" />
-		<link rel="stylesheet" type="text/css" href="./src/css/styles.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-		/>
 	</head>
 
 	<body class="overflow-hidden">
@@ -29,12 +16,12 @@
 
 		<div class="navbar-container">
 			<nav
-				class="navbar navbar-expand-lg navbar-light pb-0 border-bottom-0"
+				class="navbar navbar-expand-lg navbar-light mt-md-2 mt-0 pt-2 pb-2 border-bottom-0"
 				data-overlay=""
 				data-sticky="top"
 			>
 				<div class="container">
-					<a class="navbar-brand hover-effect" href="./">
+					<a class="navbar-brand hover-effect" href="https://claudiu.design/" title="Home">
 						<img
 							class="avatar avatar-lg"
 							src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630054584/Studio%20Branding/CF-Logo-Dark-SVG_fh9sbl.svg"
@@ -88,7 +75,7 @@
 						<button
 							type="button"
 							id="cta-btn"
-							class="btn btn-link text-dark ps-0 text-uppercase"
+							class="btn btn-link text-dark fw-bolder ps-0 text-uppercase"
 							data-bs-toggle="modal"
 							data-bs-target="#cta-modal"
 						>
@@ -103,7 +90,7 @@
 		</div>
 
 		<!-- Hero Section -->
-		<div
+		<section
 			id="hero"
 			data-overlay=""
 			scrolling="no"
@@ -112,10 +99,10 @@
 		>
 			<div class="hero-image-overlay hover-effect"></div>
 			<section
-				class="min-vh-100 overflow-hidden d-flex flex-column justify-content-center mb-5"
+				class="overflow-hidden d-flex flex-column justify-content-center mb-5"
 			>
-				<div class="container mt-5">
-					<div class="row justify-content-center text-center align-items-start mt-5">
+				<div class="container mt-2">
+					<div class="row justify-content-center text-center align-items-start">
 						<div
 							class="col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate"
 							data-aos="fade-up"
@@ -135,11 +122,7 @@
 							</div>
 							<div class="btn-group mt-md-5 mt-3">
 								<div class="">
-									<a
-										href="https://calendly.com/claudiu-furca/30min"
-										class="btn btn-lg btn-primary shadow-sm"
-										>Schedule Your Free Call</a
-									>
+									<a class="btn btn-lg btn-primary shadow-sm" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/claudiu-furca/30min'});return false;">Schedule Your Free Call</a>							
 								</div>
 								<!-- <div class=""
 							>
@@ -316,6 +299,19 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
+		<link rel="stylesheet" type="text/css" href="./src/css/theme.css" />
+		<link rel="stylesheet" type="text/css" href="./src/css/styles.css" />
+
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+			rel="stylesheet"
+			async
+		/>
+
+		<script type="module" src="src/js/index.js" async></script>
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 	</body>
 </html>
