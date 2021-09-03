@@ -2,6 +2,7 @@
 	"name": "web-hero-section",
 	"version": "1.0.0",
 	"description": "Claudiu Furca Portfolio",
+	"source": ["src/js/index.js", "index.html"],
 	"scripts": {
 		"start": "parcel index.html --open",
 		"build": "parcel build index.html"
