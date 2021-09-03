@@ -56,7 +56,7 @@ function GetInTouch() {
 	const overlayImg = document.querySelectorAll('.hero-image-overlay')[0];
 
 	btn.addEventListener('mouseenter', () => {
-		overlayImg.style = 'opacity: 0.55';
+		overlayImg.style = 'opacity: 0.65';
 	});
 
 	btn.addEventListener('mouseleave', () => {

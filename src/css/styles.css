@@ -74,6 +74,12 @@
 	font-size: 0.75rem;
 }
 
+.icon-tabler {
+	width: 32px;
+	height: 32px;
+	stroke-width: 1.5;
+}
+
 /* Hero */
 #hero {
 	background: linear-gradient(
@@ -92,7 +98,7 @@
 	height: 90%;
 	top: 12%;
 	right: 0;
-	background-image: url('https://res.cloudinary.com/dwddqgedw/image/upload/v1629847897/Profile_Pic-removebg_qlmntv.png');
+	background-image: url('../../assets/CF-Profile-Pic-removebg.png');
 	background-size: contain;
 	background-position: bottom right;
 	background-repeat: no-repeat;
@@ -107,14 +113,14 @@
 
 .hover-effect,
 .hover-effect:hover {
-	-webkit-transition: opacity 0.3s ease;
-	-moz-transition: opacity 0.3s ease;
-	transition: opacity 0.3s ease;
+	-webkit-transition: opacity 0.3s ease !important;
+	-moz-transition: opacity 0.3s ease !important;
+	transition: opacity 0.3s ease !important;
 }
 a.hover-effect:hover,
 img.hover-effect:hover,
 button.hover-effect:hover {
-	opacity: 0.7;
+	opacity: 0.7 !important;
 }
 
 .wave-line {
