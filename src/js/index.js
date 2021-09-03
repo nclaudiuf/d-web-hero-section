@@ -96,5 +96,4 @@ function showSubMenu() {
 			});
 		});
 	}
-	// end if innerWidth
 }
