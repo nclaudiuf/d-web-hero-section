@@ -4,7 +4,7 @@
 	"description": "Claudiu Furca Portfolio",
 	"author": "Claudiu N. Furca https://claudiu.design",
 	"license": "ISC",
-	"main": "index.html",
+	"source": "index.html",
 	"scripts": {
 		"start": "parcel index.html --open",
 		"build": "parcel build index.html"
