@@ -1,8 +1,5 @@
 import $ from 'jquery'; // required by bootstrap & fadeTo animation
 import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/theme.css';
-import '../css/styles.css';
 import 'aos';
 
 StyleModalCard();

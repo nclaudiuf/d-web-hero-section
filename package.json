@@ -4,8 +4,8 @@
 	"description": "Claudiu Furca Portfolio",
 	"author": "Claudiu N. Furca https://claudiu.design",
 	"license": "ISC",
-	"main": "index.html",
-	"source": ["src/js/index.js", "index.html"],
+	"source": "index.html",
+	"main": "dist/index.html",
 	"scripts": {
 		"start": "parcel index.html --open",
 		"build": "parcel build index.html"
@@ -23,5 +23,5 @@
 	"resolutions": {
 		"@babel/preset-env": "7.15.4"
 	},
-	"keywords": ["static", "website"]
+	"keywords": ["website", "static", "html-css-js", "vanilla"]
 }
