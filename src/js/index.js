@@ -1,6 +1,7 @@
 import $ from 'jquery'; // required by bootstrap & fadeTo animation
 import 'bootstrap';
 import 'aos';
+import '../css/styles.css';
 
 StyleModalCard();
 Make3ShadowToText();
