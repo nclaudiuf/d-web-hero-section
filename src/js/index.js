@@ -27,7 +27,7 @@ function StyleModalCard() {
 
 function Make3ShadowToText() {
 	const hero = document.querySelectorAll('#hero')[0];
-	const walk = 32; // px
+	const walk = 30; // px
 
 	const allText = hero.querySelectorAll('span.shadow-effect');
 
