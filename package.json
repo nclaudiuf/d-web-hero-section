@@ -1,28 +1,23 @@
 {
-  "name": "web-hero-section",
-  "version": "2.0.0",
-  "description": "Claudiu Furca Portfolio",
-  "author": "Claudiu N. Furca https://claudiu.design",
-  "license": "ISC",
-  "source": "index.html",
-  "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
-  },
-  "dependencies": {
-    "@parcel/transformer-image": "2.0.0-rc.0",
-    "@popperjs/core": "2.9.3",
-    "aos": "2.3.4",
-    "bootstrap": "5.1.0",
-    "jquery": "3.6.0"
-  },
-  "devDependencies": {
-    "parcel": "latest"
-  },
-  "keywords": [
-    "website",
-    "static",
-    "html-css-js",
-    "vanilla"
-  ]
+	"name": "web-hero-section",
+	"version": "2.0.0",
+	"description": "Claudiu Furca Portfolio",
+	"author": "Claudiu N. Furca https://claudiu.design",
+	"license": "ISC",
+	"source": "index.html",
+	"scripts": {
+		"start": "parcel index.html --open",
+		"build": "parcel build index.html"
+	},
+	"dependencies": {
+		"@parcel/transformer-image": "2.0.0-rc.0",
+		"@popperjs/core": "2.9.3",
+		"aos": "2.3.4",
+		"bootstrap": "5.1.0",
+		"jquery": "3.6.0"
+	},
+	"devDependencies": {
+		"parcel": "latest"
+	},
+	"keywords": ["website", "static", "html-css-js", "vanilla"]
 }
