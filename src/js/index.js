@@ -1,20 +1,14 @@
-import $ from 'jquery';
+import $ from 'jquery'; // required by bootstrap & fadeTo animation
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/theme.css';
 import '../css/styles.css';
 import 'aos';
 
-init();
 StyleModalCard();
 Make3ShadowToText();
 GetInTouch();
 showSubMenu();
-
-function init() {
-	window.$ = $; // required by bootstrap & fadeTo animation
-	window.jQuery = $;
-}
 
 function StyleModalCard() {
 	const modal = document.getElementById('cta-modal');
