@@ -1,83 +1,135 @@
 /* Functional */
-*:focus {
-	box-shadow: none !important;
-	outline: none;
-}
 *:hover {
-	-webkit-transition: opacity 0.3s ease;
-	-moz-transition: opacity 0.3s ease;
-	transition: opacity 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: opaallcity 0.3s ease;
+}
+
+body {
+	height: 70vh !important;
 }
 
 .bg-light {
 	background-color: #fafafa !important;
 }
 
-@media only screen and (min-width: 576px) {
-	.display-sm-3 {
-		font-size: 4.5rem;
-		font-weight: 600;
-		line-height: 1.2;
+.icon-tabler {
+	width: 32px;
+	height: 32px;
+	stroke-width: 1.25 !important;
+}
+
+a.hover-effect:hover,
+img.hover-effect:hover,
+button.hover-effect:hover {
+	opacity: 0.7 !important;
+}
+
+/* Navbar */
+.navbar-brand .avatar {
+	width: 60%;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu {
+		left: 0; /* position submenu card */
+		right: auto;
+	}
+	.navbar .nav-item .dropdown-menu {
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.3s;
+		margin-top: 0;
+	}
+	.navbar .nav-item:hover .nav-link {
+		color: var(--light);
+	}
+	.navbar .dropdown-menu.fade-down {
+		top: 80%;
+		transform: rotateX(-75deg);
+		transform-origin: 0% 0%;
+	}
+	.navbar .dropdown-menu.fade-up {
+		top: 180%;
+	}
+	.navbar .nav-item:hover .dropdown-menu {
+		transition: 0.3s;
+		opacity: 1;
+		visibility: visible;
+		top: 100%;
+		transform: rotateX(0deg);
+	}
+	.dropdown-menu li {
+		position: relative;
+	}
+	.nav-item .submenu {
+		display: none;
+		position: absolute;
+		left: 100%;
+		top: -7px;
+	}
+	.nav-item .submenu-left {
+		right: 100%;
+		left: auto;
+	}
+	.dropdown-menu > li:hover {
+		background-color: #f1f1f1;
+	}
+	.dropdown-menu > li:hover > .submenu {
+		display: block;
 	}
 }
 
-.show-lg,
-.show-md,
-.show-sm {
-	display: none !important;
-}
-
-@media only screen and (max-width: 992px) {
-	.hide-lg {
-		display: none !important;
-	}
-	.show-lg {
-		display: inline-flex !important;
-	}
-}
-@media only screen and (max-width: 768px) {
-	.hide-md {
-		display: none !important;
-	}
-	.show-md {
-		display: inline-flex !important;
-	}
-}
-@media only screen and (max-width: 576px) {
-	.hide-sm {
-		display: none !important;
-	}
-	.show-sm {
-		display: inline-flex !important;
-	}
-}
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 	.navbar-light {
 		background: linear-gradient(
 			180deg,
-			rgba(255, 215, 23, 0.95) 0%,
-			rgba(255, 215, 23, 1) 100%
+			rgba(255, 220, 52, 100) 0%,
+			rgba(255, 215, 23, 100) 100%
 		) !important;
 		background: rgb(255, 215, 23);
 	}
 	.navbar-light .navbar-toggler-icon {
 		background: none;
 	}
-}
+	a.text-secondary:hover,
+	button.text-secondary:hover,
+	a.text-secondary:focus,
+	button.text-secondary:focus {
+		color: var(--secondary-light) !important;
+	}
+	a.text-secondary-light:hover,
+	button.text-secondary-light:hover,
+	a.text-secondary-light:focus,
+	button.text-secondary-light:focus {
+		color: var(--neutral-dark) !important;
+	}
+	a.text-dark:hover,
+	button.text-dark:hover,
+	a.text-dark:focus,
+	button.text-dark:focus {
+		color: var(--secondary-light) !important;
+	}
+	.dropdown-menu .dropdown-menu {
+		margin-left: 0.7rem;
+		margin-right: 0.7rem;
+		margin-bottom: 0.5rem;
+	}
 
-.navbar-brand .avatar {
-	width: 60%;
-}
+	a.dropdown-toggle:after {
+		display: inline-flex !important;
+		margin-left: 0.255em;
+		content: '';
+		border-top: 0.3em solid;
+		border-left: 0.3em solid transparent;
+		border-bottom: 0;
+		border-right: 0.3em solid transparent;
+	}
 
-.fs-upper {
-	font-size: 0.75rem;
-}
-
-.icon-tabler {
-	width: 32px;
-	height: 32px;
-	stroke-width: 1.5;
+	a.dropdown-toggle:after {
+		border-top-color: var(--secondary-light) !important;
+	}
 }
 
 /* Hero */
@@ -109,18 +161,6 @@
 	.hero-image-overlay {
 		opacity: 0.15;
 	}
-}
-
-.hover-effect,
-.hover-effect:hover {
-	-webkit-transition: opacity 0.3s ease !important;
-	-moz-transition: opacity 0.3s ease !important;
-	transition: opacity 0.3s ease !important;
-}
-a.hover-effect:hover,
-img.hover-effect:hover,
-button.hover-effect:hover {
-	opacity: 0.7 !important;
 }
 
 .wave-line {

@@ -7,16 +7,19 @@
 		<meta name="description" content="Website Hero & Navigation Section" />
 		<meta name="author" content="Claudiu Furca" />
 		<title>Product & Service Design | Design Sprint</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	</head>
 
-	<body class="overflow-hidden">
+	<body class="min-vh-70">
 		<div class="loader change">
 			<div class="loading-animation"></div>
 		</div>
 
 		<div class="navbar-container">
 			<nav
-				class="navbar navbar-expand-lg navbar-light mt-md-2 mt-0 pt-1 pb-1 border-bottom-0"
+				class="navbar navbar-expand-lg navbar-light mt-lg-3 mt-0 pt-1 pb-1 border-bottom-0"
 				data-overlay=""
 				data-sticky="top"
 			>
@@ -37,9 +40,9 @@
 						aria-expanded="false"
 						aria-label="Toggle Nav Mobile"
 					>
-						<span class="navbar-toggler-icon">
+						<span class="navbar-toggler-icon text-secondary">
 							<i class="text-secondary fs-1">
-									<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-x text-secondary" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-x text-secondary" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<line x1="18" y1="6" x2="6" y2="18"></line>
 										<line x1="6" y1="6" x2="18" y2="18"></line>
@@ -50,115 +53,134 @@
 
 					<div
 						id="navbarCollapse"
-						class="collapse navbar-collapse col-lg-5 col-12 justify-content-lg-between"
+						class="collapse navbar-collapse col-lg-7 col-12 justify-content-lg-between"
 					>
-						<div class="me-sm-3 me-0 pb-2 pb-lg-0">
-							<ul class="navbar-nav me-auto mb-2 mb-md-0">
-								<li class="nav-item dropdown">
+						<div class="me-auto pb-2 pb-lg-0">
+							<ul class="navbar-nav mb-0">
+								<li class="d-flex flex-column mt-lg-1 mt-0 mb-2 nav-item dropdown mr-5">					
 									<a
 										href="https://claudiu.design/work-cases"
 										class="nav-link dropdown-toggle text-secondary text-uppercase fs-6"
-										data-toggle="dropdown-grid"
-										aria-expanded="false"
-										aria-haspopup="true"
+										id="work-navDropdown"
+										role="button" data-bs-toggle="dropdown" aria-expanded="false"	
 										data-image
-										>Work Cases</a
+										>Work</a
 									>
+									<ul class="dropdown-menu mt-1" aria-labelledby="work-navDropdown">
+										<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/work-cases">Work Cases</a></li>
+										<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/product-designs">Product Designs</a></li>
+									</ul>
 								</li>
-								<li class="nav-item dropdown">
+								<li class="d-flex flex-column mt-lg-1 mt-0 mb-2 nav-item dropdown mr-5">
+										<a
+											href="https://claudiu.design/services"
+											class="nav-link dropdown-toggle text-secondary text-uppercase fs-6"
+											id="services-navDropdown"
+											role="button" data-bs-toggle="dropdown" aria-expanded="false"
+											data-image
+											>Services</a
+										>
+										<ul class="dropdown-menu mt-1" aria-labelledby="services-navDropdown">
+											<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/services/design-sprint-workshop">Design Sprint / Workshop</a></li>
+											<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/services/service-system-desginer">Service / System Designer</a></li>
+											<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/services/iot-product-designer">Product Design Consultant</a></li>
+										</ul>
+								</li>
+								<li class="d-flex flex-column mt-lg-1 mt-0 mb-2 nav-item dropdown">
 									<a
 										href="https://claudiu.design/about"
 										class="nav-link dropdown-toggle text-secondary text-uppercase"
-										data-toggle="dropdown-grid"
-										aria-expanded="false"
-										aria-haspopup="true"
+										id="about-navDropdown"
+										role="button" data-bs-toggle="dropdown" aria-expanded="false"
 										data-image
 										>About</a
 									>
+									<ul class="dropdown-menu mt-1" aria-labelledby="about-navDropdown">
+										<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/about">About Claudiu</a></li>
+										<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/projects-achievements">Projects & Achievements</a></li>
+										<li><hr class="dropdown-divider mt-1 mb-1"></li>
+										<li><a class="dropdown-item text-secondary-light fw-normal" href="#">Download Resume</a></li>							
+									</ul>
 								</li>
 							</ul>
 						</div>
 
-						<button
+					<hr class="dropdown-divider mt-1 mb-1">
+
+					<button
 							type="button"
 							id="cta-btn"
-							class="btn btn-link text-dark fw-bolder ps-0 text-uppercase"
+							class="btn btn-link text-dark ps-0 text-uppercase fw-bolder"
 							data-bs-toggle="modal"
 							data-bs-target="#cta-modal"
 						>
-							👉 Get in Touch
-						</button>
+							<span class="hide-md">👉</span> <span class="show-md">👉🏼</span> Get in Touch
+					</button>
 
-						<div class="social-wrapper position-absolute show-sm">
-							<ul class="d-flex">
-								<li class="btn">
-									<a href="https://www.linkedin.com/in/claudiu-furca" class="hover-effect">
-										<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-linkedin text-secondary" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-											<rect x="4" y="4" width="16" height="16" rx="2"></rect>
-											<line x1="8" y1="11" x2="8" y2="16"></line>
-											<line x1="8" y1="8" x2="8" y2="8.01"></line>
-											<line x1="12" y1="16" x2="12" y2="11"></line>
-											<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-										</svg>
-									</a>
-								</li>
-								<li class="btn hover-effect">
-									<a href="https://dribbble.com/claudiufurca" class="hover-effect">
-										<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-dribbble text-secondary" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-											<circle cx="12" cy="12" r="9"></circle>
-											<path d="M9 3.6c5 6 7 10.5 7.5 16.2"></path>
-											<path d="M6.4 19c3.5 -3.5 6 -6.5 14.5 -6.4"></path>
-											<path d="M3.1 10.75c5 0 9.814 -.38 15.314 -5"></path>
-										</svg>
-									</a>
-								</li>
-								<li class="btn hover-effect">
-									<a href="https://www.behance.net/claudiufurca" class="hover-effect">
-										<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-behance text-secondary" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-											<path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5"></path>
-											<line x1="3" y1="12" x2="7.5" y2="12"></line>
-											<path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
-											<line x1="16" y1="6" x2="19" y2="6"></line>
-										</svg>
-									</a>
-								</li>    
-								<!-- <li>
-									<a href="https://twitter.com/nclaudiuf" class="hover-effect">
-										<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-											<path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
-										</svg>
-									</a>
-								</li> -->
-							</ul>
-						</div>
+					<div class="d-flex flex-column col social-wrapper show-sm ml-0 pl-0">
+						<ul class="d-flex pl-0">
+							<li class="btn">
+								<a href="https://www.linkedin.com/in/claudiu-furca" class="text-secondary">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+										<line x1="8" y1="11" x2="8" y2="16"></line>
+										<line x1="8" y1="8" x2="8" y2="8.01"></line>
+										<line x1="12" y1="16" x2="12" y2="11"></line>
+										<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+									</svg>
+								</a>
+							</li>
+							<li class="btn">
+								<a href="https://dribbble.com/claudiufurca" class="text-secondary">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-dribbble" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<circle cx="12" cy="12" r="9"></circle>
+										<path d="M9 3.6c5 6 7 10.5 7.5 16.2"></path>
+										<path d="M6.4 19c3.5 -3.5 6 -6.5 14.5 -6.4"></path>
+										<path d="M3.1 10.75c5 0 9.814 -.38 15.314 -5"></path>
+									</svg>
+								</a>
+							</li>
+							<li class="btn">
+								<a href="https://www.behance.net/claudiufurca" class="text-secondary">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-behance" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5"></path>
+										<line x1="3" y1="12" x2="7.5" y2="12"></line>
+										<path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
+										<line x1="16" y1="6" x2="19" y2="6"></line>
+									</svg>
+								</a>
+							</li>    
+							<!-- <li class="btn">
+								<a href="https://twitter.com/nclaudiuf" class="text-secondary-light">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+										<path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+									</svg>
+								</a>
+							</li> -->
+						</ul>
+					</div>
 
 					</div>
 
 				</div>
 			</nav>
-
-			<!-- <div id="follow"><img src="https://placekitten.com/96/140" /><br>Kitteh</br>
-			</div> -->
 		</div>
 
 		<!-- Hero Section -->
 		<section
 			id="hero"
-			data-overlay=""
-			scrolling="no"
-			aria-hidden="true"
-			class="d-flex flex-column justify-content-center mb-5 min-vh-100"
+			class="d-flex flex-column justify-content-center mb-5 overflow-hidden"
 		>
 
 			<div class="social-wrapper position-absolute hide-sm">
 					<ul class="d-flex list-group">
 						<li class="btn">
-							<a href="https://www.linkedin.com/in/claudiu-furca" class="hover-effect">
-								<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-linkedin text-secondary" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<a href="https://www.linkedin.com/in/claudiu-furca" class="text-secondary-light">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 									<rect x="4" y="4" width="16" height="16" rx="2"></rect>
 									<line x1="8" y1="11" x2="8" y2="16"></line>
@@ -169,8 +191,8 @@
 							</a>
 						</li>
 						<li class="btn hover-effect">
-							<a href="https://dribbble.com/claudiufurca" class="hover-effect">
-								<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-dribbble text-secondary" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<a href="https://dribbble.com/claudiufurca" class="text-secondary-light">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-dribbble" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 									<circle cx="12" cy="12" r="9"></circle>
 									<path d="M9 3.6c5 6 7 10.5 7.5 16.2"></path>
@@ -180,8 +202,8 @@
 							</a>
 						</li>
 						<li class="btn hover-effect">
-							<a href="https://www.behance.net/claudiufurca" class="hover-effect">
-								<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-behance text-secondary" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<a href="https://www.behance.net/claudiufurca" class="text-secondary-light">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-brand-behance" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 									<path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5"></path>
 									<line x1="3" y1="12" x2="7.5" y2="12"></line>
@@ -202,29 +224,29 @@
 			</div>
 
 			<div class="hero-image-overlay hover-effect"></div>
-			<div class="container mt-md-5 mt-3">
+			<div class="container mt-md-5 mt-0">
 				<div class="row justify-content-center text-center align-items-start">
 					<div
-						class="col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate"
+						class="col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate mt-sm-5 mt-2"
 						data-aos="fade-up"
 						data-aos-delay="500"
 					>
-						<div class="wave-line d-flex justify-content-center col-12 hide-sm"></div>
-						<h1 class="display-sm-3 display-4 text-secondary user-select-none mt-4">
-							Grow <span class="shadow-effect hide-sm">Solid</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm">Solid</span> Products & Systems,
-							<span class="shadow-effect hide-sm">Faster.</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm">Faster.</span>
+						<!-- <div class="wave-line d-flex justify-content-center col-12 hide-sm"></div> -->
+						<h1 class="display-sm-3 display-4 fw-bold text-secondary user-select-none mt-4">
+							Grow <span class="shadow-effect hide-sm">Solid</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Solid</span> Products & Systems,
+							<span class="shadow-effect hide-sm">Faster.</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Faster.</span>
 						</h1>
 						<div class="mb-sm-5 mb-4 mt-sm-4 mt-2">
-							<p class="lead text-secondary-light user-select-none">
-								I help SaaS companies and startups turn complex technology
+							<p class="lead text-dark-50 user-select-none">
+								I help SaaS companies and startups <span class="fw-bolder">turn complex technology</span>
 								<br class="hide-sm" />
-								into <b>simple</b> products and systems, <b>for humans</b>.
+								into <span class="fw-bolder">simple products and systems</span>, for humans.
 							</p>
 						</div>
-						<div class="wave-line d-flex justify-content-center col-12 mb-3 show-sm"></div>
+						<div class="wave-line d-flex justify-content-center col-12 mb-2"></div>
 						<div class="btn-group mt-md-5 mt-3">
-							<div class="">
-								<a class="btn btn-lg btn-primary shadow-sm" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/claudiu-furca/30-minute'});return false;">Schedule Your Free Call</a>							
+							<div class="shadow-sm">
+								<a class="btn btn-lg btn-primary" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/claudiu-furca/30-minute'});return false;">Schedule Your Free Call</a>							
 							</div>
 						</div>
 					</div>

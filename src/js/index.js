@@ -9,9 +9,10 @@ init();
 StyleModalCard();
 Make3ShadowToText();
 GetInTouch();
+showSubMenu();
 
 function init() {
-	window.$ = $;
+	window.$ = $; // required by bootstrap & fadeTo animation
 	window.jQuery = $;
 }
 
@@ -55,11 +56,45 @@ function GetInTouch() {
 	const btn = document.getElementById('cta-btn');
 	const overlayImg = document.querySelectorAll('.hero-image-overlay')[0];
 
-	btn.addEventListener('mouseenter', () => {
-		overlayImg.style = 'opacity: 0.65';
+	btn.addEventListener('mouseover', () => {
+		$(overlayImg).fadeTo(300, 0.65);
 	});
 
 	btn.addEventListener('mouseleave', () => {
-		overlayImg.style = 'opacity: 0.35';
+		$(overlayImg).fadeTo(300, 0.35);
 	});
+}
+
+function showSubMenu() {
+	// make it as accordion for smaller screens
+	if (window.innerWidth < 992) {
+		// close all inner dropdowns when parent is closed
+		document
+			.querySelectorAll('.navbar-nav .dropdown')
+			.forEach(function (everydropdown) {
+				everydropdown.addEventListener('hidden.bs.dropdown', function () {
+					// after dropdown is hidden, then find all submenus
+					this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+						// hide every submenu as well
+						everysubmenu.style.display = 'none';
+					});
+				});
+			});
+
+		document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+			element.addEventListener('click', function (e) {
+				let nextEl = this.nextElementSibling;
+				if (nextEl && nextEl.classList.contains('submenu')) {
+					// prevent opening link if link needs to open dropdown
+					e.preventDefault();
+					if (nextEl.style.display === 'block') {
+						nextEl.style.display = 'none';
+					} else {
+						nextEl.style.display = 'block';
+					}
+				}
+			});
+		});
+	}
+	// end if innerWidth
 }
