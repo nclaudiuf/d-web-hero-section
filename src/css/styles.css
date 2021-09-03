@@ -159,7 +159,6 @@ button.hover-effect:hover {
 	height: 90%;
 	top: 12%;
 	right: 0;
-	background-image: url('../../assets/CF-Profile-Pic-removebg.png');
 	background-size: contain;
 	background-position: bottom right;
 	background-repeat: no-repeat;
@@ -173,8 +172,7 @@ button.hover-effect:hover {
 }
 
 .wave-line {
-	background: url('https://res.cloudinary.com/dwddqgedw/image/upload/v1629735666/Studio%20Branding/Wave_line_primary.svg')
-		no-repeat;
+	background-repeat: no-repeat;
 	height: 18px;
 	width: 96%;
 	background-position: center center;
