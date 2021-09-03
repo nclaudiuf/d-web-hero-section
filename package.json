@@ -1,7 +1,7 @@
 {
 	"name": "web-hero-section",
 	"version": "1.0.0",
-	"description": "Claudiu Furca Product / Service Designer Portfolio",
+	"description": "Claudiu Furca Portfolio",
 	"source": "index.html",
 	"scripts": {
 		"start": "parcel",
