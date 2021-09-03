@@ -2,21 +2,25 @@
 
 # dependencies
 /node_modules
+node_modules
 /.pnp
 .pnp.js
 .env
-.parcel-cache
 
 # testing
 /coverage
 
 # production
 /dist
+dist
 
 # IDE
 .vscode/
 
 # misc
+.parcel-cache
+*.lock
+.cache
 .DS_Store
 .env.local
 .env.development.local

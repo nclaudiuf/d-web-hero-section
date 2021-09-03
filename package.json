@@ -4,20 +4,20 @@
 	"description": "Claudiu Furca Portfolio",
 	"author": "Claudiu N. Furca https://claudiu.design",
 	"license": "ISC",
-	"source": "index.html",
+	"main": "index.html",
 	"scripts": {
 		"start": "parcel index.html --open",
 		"build": "parcel build index.html"
 	},
 	"dependencies": {
+		"parcel": "next",
 		"@popperjs/core": "2.9.3",
 		"aos": "2.3.4",
 		"bootstrap": "5.1.0",
 		"jquery": "3.6.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.2.0",
-		"parcel": "latest"
+		"@babel/core": "7.2.0"
 	},
 	"resolutions": {
 		"@babel/preset-env": "7.15.4"
