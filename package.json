@@ -5,7 +5,6 @@
 	"author": "Claudiu N. Furca https://claudiu.design",
 	"license": "ISC",
 	"source": "index.html",
-	"main": "dist/index.html",
 	"scripts": {
 		"start": "parcel index.html --open",
 		"build": "parcel build index.html"
