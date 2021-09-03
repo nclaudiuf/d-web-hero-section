@@ -2,10 +2,9 @@
 	"name": "web-hero-section",
 	"version": "1.0.0",
 	"description": "Claudiu Furca Portfolio",
-	"source": "index.html",
 	"scripts": {
-		"start": "parcel",
-		"build": "parcel build"
+		"start": "parcel index.html --open",
+		"build": "parcel build index.html"
 	},
 	"dependencies": {
 		"@babel/core": "7.15.4",
