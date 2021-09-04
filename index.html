@@ -7,8 +7,7 @@
 		<meta name="description" content="Website Hero & Navigation Section" />
 		<meta name="author" content="Claudiu Furca" />
 		<title>Product & Service Design | Design Sprint</title>
-		
-		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+	
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link defer href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -37,11 +36,10 @@
 						data-aos="fade-up"
 						data-aos-delay="500"
 						>
-						<img 										
-							class="avatar avatar-lg lazy"
-							src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630703537/Studio%20Branding/Logo%20/CF-Logo-Dark-LowFi_xqvofe.webp"
-							data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630702863/Studio%20Branding/Logo%20/CF-Logo-Dark_yvcunu.webp"
-							alt="Leap"
+						<img 									
+							class="lozad"
+							data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630714421/Studio%20Branding/Logo%20/cf-logo-dark-1x_exzqmk.webp"
+							alt="Leap"						
 						/>
 					</a>
 					<button
@@ -79,7 +77,7 @@
 										data-image
 										>Work</a
 									>
-									<ul class="dropdown-menu mt-1" aria-labelledby="work-navDropdown">
+									<ul class="dropdown-menu mt-sm-0 mt-1" aria-labelledby="work-navDropdown">
 										<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/work-cases">Work Cases</a></li>
 										<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/product-designs">Product Designs</a></li>
 									</ul>
@@ -93,7 +91,7 @@
 											data-image
 											>Services</a
 										>
-										<ul class="dropdown-menu mt-1" aria-labelledby="services-navDropdown">
+										<ul class="dropdown-menu mt-sm-0 mt-1" aria-labelledby="services-navDropdown">
 											<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/services/design-sprint-workshop">Design Sprint / Workshop</a></li>
 											<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/services/service-system-desginer">Service / System Designer</a></li>
 											<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/services/iot-product-designer">Product Design Consultant</a></li>
@@ -108,7 +106,7 @@
 										data-image
 										>About</a
 									>
-									<ul class="dropdown-menu mt-1" aria-labelledby="about-navDropdown">
+									<ul class="dropdown-menu mt-sm-0 mt-1" aria-labelledby="about-navDropdown">
 										<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/about">About Claudiu</a></li>
 										<li><a class="dropdown-item text-secondary-light fw-normal" href="https://claudiu.design/projects-achievements">Projects & Achievements</a></li>
 										<li><hr class="dropdown-divider mt-1 mb-1"></li>
@@ -236,26 +234,34 @@
 					</ul>
 			</div>
 
-			<div class="hero-image-overlay lazy" data-bg="https://res.cloudinary.com/dwddqgedw/image/upload/v1630702393/Profile/CF-Profile-Cover-SuperLowFi_pnclcg.webp" data-bg-hidpi="https://res.cloudinary.com/dwddqgedw/image/upload/v1630702393/Profile/CF-Profile-Cover-HDR_tpjuqw.webp"></div>
+			<div class="hero-image-overlay opacity-50 position-absolute d-flex">
+				<img class="lozad" data-placeholder-background="https://res.cloudinary.com/dwddqgedw/image/upload/v1630702393/Profile/CF-Profile-Cover-SuperLowFi_pnclcg.webp"
+				data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630702393/Profile/CF-Profile-Cover-HDR_tpjuqw.webp" 
+				/>
+			</div>
 			<div class="container mt-md-5 mt-0">
 				<div class="row justify-content-center text-center align-items-start">
 					<div
-						class="col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate mt-sm-5 mt-2"
+						class="content col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate mt-sm-5 mt-2"
 						data-aos="fade-up"
 						data-aos-delay="500"
 					>	
-						<h1 class="display-sm-3 display-4 fw-bold text-secondary user-select-none mt-4">
-							Grow <span class="shadow-effect hide-sm">Solid</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Solid</span> Products & Systems,
-							<span class="shadow-effect hide-sm">Faster.</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Faster.</span>
-						</h1>
-						<div class="mb-sm-5 mb-4 mt-sm-4 mt-2">
-							<p class="lead text-dark-50 user-select-none">
-								I help SaaS companies and startups <span class="fw-bolder">turn complex technology</span>
-								<br class="hide-sm" />
-								into <span class="fw-bolder">simple products and systems</span>, for humans.
-							</p>
+						<div class="container-fluid d-flex flex-column">
+							<h1 class="display-sm-3 display-4 fw-bold text-secondary user-select-none mt-4">
+								Grow <span class="shadow-effect hide-sm">Solid</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Solid</span> Products & Systems,
+								<span class="shadow-effect hide-sm">Faster.</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Faster.</span>
+							</h1>
+							<div class="mb-sm-5 mb-4 mt-sm-4 mt-2">
+								<p class="lead text-dark-50 user-select-none">
+									I help SaaS companies and startups <span class="fw-bolder">turn complex technology</span>
+									<br class="hide-sm" />
+									into <span class="fw-bolder">simple products and systems</span>, for humans.
+								</p>
+							</div>
 						</div>
-						<div class="wave-line d-flex justify-content-center col-12 mb-2 lazy" data-bg="https://res.cloudinary.com/dwddqgedw/image/upload/v1630705886/Studio%20Branding/Design%20Materials/wave-line-primary_iscuxo.webp"></div>
+						<div class="d-flex justify-content-center col-12 mb-2">
+							<img class="wave-line lozad" data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630705886/Studio%20Branding/Design%20Materials/wave-line-primary_iscuxo.webp"/>
+						</div>
 						<div class="btn-group mt-md-5 mt-3">
 							<div class="shadow-sm">
 								<a class="btn btn-lg btn-primary" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/claudiu-furca/30-minute'});return false;">Schedule Your Free Call</a>							
@@ -341,7 +347,10 @@
 											<span class="fw-bold text-uppercase fs-upper user-select-none"
 												>Email</span
 											>
-											<p class="text-secondary-light fs-6 pt-1">claudiu.furca@gmail.com</p>
+											<a class="text-secondary-light fs-6 pt-1"
+												href="mailto:claudiu.furca@gmail.com">
+												claudiu.furca@gmail.com
+											</a>
 											<p></p>
 										</div>
 									</li>
@@ -371,7 +380,7 @@
 							<div class="col-xl-5 col-lg-6 col-12 d-flex justify-content-center mb-1">
 								<img
 									data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630703051/Studio%20Branding/Assets%20/Design_Studio_QR_lcwudb_u1qfrf.webp"
-									class="rounded-start pb-2 lazy"
+									class="rounded-start pb-2 lozad"
 									alt="Conact Card Details QR Code"
 									height="256"
 									width="256"
@@ -428,7 +437,7 @@
 			</div>
 		</section>
 
-		<script type="module" src="src/js/index.js"></script>		
+		<script type="module" src="src/js/index.js"></script>
 		<script defer src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 	</body>
 </html>

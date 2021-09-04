@@ -34,6 +34,10 @@ button.hover-effect:hover {
 	width: 60%;
 }
 
+.navbar-nav .dropdown ul li:hover {
+	background-color: #fbfcfd !important;
+}
+
 @media all and (min-width: 992px) {
 	.navbar .dropdown-menu {
 		left: 0; /* position submenu card */
@@ -144,7 +148,7 @@ button.hover-effect:hover {
 /* Hero */
 #hero {
 	background: linear-gradient(
-		to bottom right,
+		60deg,
 		rgba(251, 252, 253, 1),
 		rgba(229, 229, 229, 0.5)
 	) !important;
@@ -153,16 +157,10 @@ button.hover-effect:hover {
 
 .hero-image-overlay {
 	z-index: -1;
-	position: absolute;
-	display: inline-block;
 	width: 90%;
 	height: 90%;
 	top: 12%;
 	right: 0;
-	background-size: contain;
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	opacity: 0.35;
 }
 
 @media only screen and (max-width: 768px) {
@@ -172,12 +170,30 @@ button.hover-effect:hover {
 }
 
 .wave-line {
-	background-repeat: no-repeat;
-	height: 18px;
-	width: 96%;
-	background-position: center center;
-	background-attachment: cover;
-	background-size: 100% 100%;
 	display: block;
 	opacity: 0.95;
+}
+
+/* Animation & Effects */
+.scaleDown {
+	transform: scale(1);
+	transform-origin: center;
+	-webkit-animation: scaleDown-content 0.35s linear;
+	animation: scaleDown-content 0.35s linear;
+	animation-fill-mode: forwards !important;
+}
+
+@keyframes scaleDown-content {
+	from {
+		transform: scale(1);
+		transform-origin: center;
+	}
+	50% {
+		transform: scale(0.925) !important;
+		transform-origin: 50% 42% !important;
+	} /* ignored */
+	to {
+		transform: scale(0.8);
+		transform-origin: 50% 32%;
+	}
 }

@@ -1,12 +1,16 @@
 import $ from 'jquery'; // required by bootstrap & fadeTo animation
 import 'bootstrap';
 import 'aos';
+import lozad from 'lozad'; // using ES6 modules
 import '../css/styles.css';
 
 StyleModalCard();
 Make3ShadowToText();
 GetInTouch();
 showSubMenu();
+
+const observer = lozad(); //loads '.lozad' elements
+observer.observe();
 
 function StyleModalCard() {
 	const modal = document.getElementById('cta-modal');
@@ -47,13 +51,20 @@ function Make3ShadowToText() {
 function GetInTouch() {
 	const btn = document.getElementById('cta-btn');
 	const overlayImg = document.querySelectorAll('.hero-image-overlay')[0];
+	const contentElem = document.querySelectorAll('.content')[0];
 
 	btn.addEventListener('mouseover', () => {
-		$(overlayImg).fadeTo(300, 0.65);
+		$(overlayImg).fadeTo(300, 0.95);
+		overlayImg.style = 'z-index: 9';
+		$(contentElem).addClass('scaleDown');
+		$(contentElem).fadeTo(300, 0.5);
 	});
 
 	btn.addEventListener('mouseleave', () => {
-		$(overlayImg).fadeTo(300, 0.35);
+		$(overlayImg).fadeTo(300, 0.55);
+		overlayImg.style = 'z-index: -1';
+		$(contentElem).fadeTo(300, 0.9);
+		$(contentElem).removeClass('scaleDown');
 	});
 }
 
