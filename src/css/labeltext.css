@@ -1,9 +1,9 @@
-.labeltext-animated--secondary {
+.labeltext-animated-secondary {
 	--text: #313131;
 	--shadow: 0 2px 8px -1px rgba(49, 49, 49, 0.32);
 	--shadow-hover: 0 4px 20px -2px rgba(49, 49, 49, 0.5);
 }
-.labeltext-animated--primary {
+.labeltext-animated-primary {
 	--text: #ffd717;
 	--shadow: 0 2px 8px -1px rgba(255, 215, 23, 0.04);
 	--shadow-hover: 0 4px 20px -2px rgba(255, 215, 23, 0.12);
@@ -18,30 +18,30 @@
 .lg-labeltext-animated {
 	--font-size: 1.25rem;
 }
-
 .labeltext-animated {
 	--text: #121212;
 	--duration: 0.44s;
 	--move-hover: -4px;
 	--font-shadow: var(--font-size);
+	letter-spacing: 1px;
 	color: var(--text);
 	transform: translateY(var(--y)) translateZ(0);
-	transition: transform var(--duration) ease;
+	transition: transform var(--duration) ease, box-shadow var(--duration) ease;
 	line-height: var(--font-size);
+	box-shadow: none;
 }
-.labeltext-animated--bx {
+.labeltext-animated-bx {
 	--shadow: 0 2px 8px -1px rgba(18, 18, 18, 0.32);
 	--shadow-hover: 0 4px 20px -2px rgba(18, 18, 18, 0.5);
 	box-shadow: var(--shadow);
-	transition: transform var(--duration) ease, box-shadow var(--duration) ease;
 }
-.labeltext-animated.fast {
+.labeltext-animated-fast {
 	--duration: 0.32s;
 }
-.labeltext-animated.reverse {
+.labeltext-animated-reverse {
 	--font-shadow: calc(var(--font-size) * -1);
 }
-.labeltext-animated.reverse:hover span {
+.labeltext-animated-reverse:hover span {
 	--m: calc(var(--font-size));
 }
 .labeltext-animated div {

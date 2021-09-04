@@ -1,15 +1,17 @@
-import $ from 'jquery'; // required by bootstrap & fadeTo animation
+import 'jquery';
 import 'bootstrap';
-import 'aos';
-import lozad from 'lozad'; // using ES6 modules
+import lozad from 'lozad';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/theme.css';
 import '../css/styles.css';
 
 StyleModalCard();
 Make3ShadowToText();
-GetInTouch();
+getInTouch_Animation();
 showSubMenu();
+setButtonAnimation();
 
-const observer = lozad(); //loads '.lozad' elements
+const observer = lozad(); // lazy load
 observer.observe();
 
 function StyleModalCard() {
@@ -48,24 +50,29 @@ function Make3ShadowToText() {
 	}
 }
 
-function GetInTouch() {
+const overlayImg = document.querySelector('.hero-image-overlay .content');
+const textContent = document.querySelector('.row .content');
+
+function getInTouch_Animation() {
 	const btn = document.getElementById('cta-btn');
-	const overlayImg = document.querySelectorAll('.hero-image-overlay')[0];
-	const contentElem = document.querySelectorAll('.content')[0];
 
-	btn.addEventListener('mouseover', () => {
-		$(overlayImg).fadeTo(300, 0.95);
-		overlayImg.style = 'z-index: 9';
-		$(contentElem).addClass('scaleDown');
-		$(contentElem).fadeTo(300, 0.5);
-	});
+	if (textContent !== null && overlayImg !== null && btn !== null) {
+		btn.addEventListener('mouseenter', () => {
+			textContent.classList.add('content--scaleDown');
+			overlayImg.classList.add('img--scaleUp');
+		});
+		btn.addEventListener('mouseleave', () => {
+			textContent.classList.add('content--Fallback');
+			overlayImg.classList.add('img--Fallback');
 
-	btn.addEventListener('mouseleave', () => {
-		$(overlayImg).fadeTo(300, 0.55);
-		overlayImg.style = 'z-index: -1';
-		$(contentElem).fadeTo(300, 0.9);
-		$(contentElem).removeClass('scaleDown');
-	});
+			setTimeout(() => {
+				textContent.classList.remove('content--Fallback');
+				overlayImg.classList.remove('img--Fallback');
+				textContent.classList.remove('content--scaleDown');
+				overlayImg.classList.remove('img--scaleUp');
+			}, 349);
+		});
+	}
 }
 
 function showSubMenu() {
@@ -99,4 +106,16 @@ function showSubMenu() {
 			});
 		});
 	}
+}
+
+function setButtonAnimation() {
+	document
+		.querySelectorAll('.labeltext-animated')
+		.forEach(
+			labelText =>
+				(labelText.innerHTML =
+					'<div><span>' +
+					labelText.textContent.trim().split('').join('</span><span>') +
+					'</span></div>')
+		);
 }
