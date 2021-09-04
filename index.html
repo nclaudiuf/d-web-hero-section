@@ -12,10 +12,6 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link defer href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 		
-		<link defer
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-			rel="stylesheet"
-		/>
 		<link defer rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 
 	</head>
@@ -32,14 +28,11 @@
 				data-sticky="top"
 			>
 				<div class="container">
-					<a class="navbar-brand hover-effect aos-init aos-animate" href="https://claudiu.design/" title="Home"
-						data-aos="fade-up"
-						data-aos-delay="500"
-						>
+					<a class="navbar-brand hover-effect" href="https://claudiu.design/" title="Home">
 						<img 									
 							class="lozad"
 							data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630714421/Studio%20Branding/Logo%20/cf-logo-dark-1x_exzqmk.webp"
-							alt="Leap"						
+							alt="Logo Claudiu Design Studio"						
 						/>
 					</a>
 					<button
@@ -71,7 +64,7 @@
 								<li class="d-flex flex-column mt-lg-1 mt-0 mb-2 nav-item dropdown mr-5">					
 									<a
 										href="https://claudiu.design/work-cases"
-										class="nav-link dropdown-toggle text-secondary text-uppercase fs-6"
+										class="nav-link dropdown-toggle text-secondary text-uppercase fs-6 md-labeltext-animated labeltext-animated"
 										id="work-navDropdown"
 										role="button" data-bs-toggle="dropdown" aria-expanded="false"	
 										data-image
@@ -85,7 +78,7 @@
 								<li class="d-flex flex-column mt-lg-1 mt-0 mb-2 nav-item dropdown mr-5">
 										<a
 											href="https://claudiu.design/services"
-											class="nav-link dropdown-toggle text-secondary text-uppercase fs-6"
+											class="nav-link dropdown-toggle text-secondary text-uppercase fs-6 md-labeltext-animated labeltext-animated"
 											id="services-navDropdown"
 											role="button" data-bs-toggle="dropdown" aria-expanded="false"
 											data-image
@@ -100,7 +93,7 @@
 								<li class="d-flex flex-column mt-lg-1 mt-0 mb-2 nav-item dropdown">
 									<a
 										href="https://claudiu.design/about"
-										class="nav-link dropdown-toggle text-secondary text-uppercase"
+										class="nav-link dropdown-toggle text-secondary text-uppercase fs-6 md-labeltext-animated labeltext-animated"
 										id="about-navDropdown"
 										role="button" data-bs-toggle="dropdown" aria-expanded="false"
 										data-image
@@ -121,7 +114,7 @@
 					<button
 							type="button"
 							id="cta-btn"
-							class="btn btn-link text-dark ps-0 text-uppercase fw-bolder"
+							class="btn btn-link text-dark ps-0 text-uppercase fw-bolder fs-6"
 							data-bs-toggle="modal"
 							data-bs-target="#cta-modal"
 						>
@@ -234,35 +227,35 @@
 					</ul>
 			</div>
 
-			<div class="hero-image-overlay opacity-50 position-absolute d-flex">
-				<img class="lozad" data-placeholder-background="https://res.cloudinary.com/dwddqgedw/image/upload/v1630702393/Profile/CF-Profile-Cover-SuperLowFi_pnclcg.webp"
-				data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630702393/Profile/CF-Profile-Cover-HDR_tpjuqw.webp" 
+			<div class="hero-image-overlay position-absolute d-flex flex-row justify-content-end align-items-top">
+				<img class="content lozad" data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630726204/Profile/CF-Profile-Cover-LowFi-mobile_ejfb9f.webp"
+				data-srcset=" https://res.cloudinary.com/dwddqgedw/image/upload/v1630726204/Profile/CF-Profile-Cover-LowFi-mobile_ejfb9f.webp 768w,
+					https://res.cloudinary.com/dwddqgedw/image/upload/v1630702393/Profile/CF-Profile-Cover-HDR_tpjuqw.webp 992w"
+					alt="Claudiu Furca - Product & Service Designer Consultant Profile"
 				/>
 			</div>
-			<div class="container mt-md-5 mt-0">
-				<div class="row justify-content-center text-center align-items-start">
+			<div class="container mt-md-5 mt-0 d-flex flex-column justify-content-bottom">
+				<div class="row justify-content-center text-center align-items-start mt-5">
 					<div
-						class="content col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate mt-sm-5 mt-2"
-						data-aos="fade-up"
-						data-aos-delay="500"
+						class="content col-xl-8 col-lg-9 col-md-10 layer-3 mt-md-5 mt-0 pt-1"
 					>	
 						<div class="container-fluid d-flex flex-column">
-							<h1 class="display-sm-3 display-4 fw-bold text-secondary user-select-none mt-4">
+							<h1 class="display-sm-2 display-3 fw-bold text-md-end text-center text-secondary user-select-none mt-md-3 mt-5 pt-sm-0 pt-4">
 								Grow <span class="shadow-effect hide-sm">Solid</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Solid</span> Products & Systems,
 								<span class="shadow-effect hide-sm">Faster.</span><span class="badge bg-primary text-wrap text-secondary-light fs-1 show-sm fw-bold">Faster.</span>
 							</h1>
 							<div class="mb-sm-5 mb-4 mt-sm-4 mt-2">
-								<p class="lead text-dark-50 user-select-none">
-									I help SaaS companies and startups <span class="fw-bolder">turn complex technology</span>
-									<br class="hide-sm" />
-									into <span class="fw-bolder">simple products and systems</span>, for humans.
+								<p class="lead text-dark-50 user-select-none fw-normal">
+									I help startups, IoT and SaaS companies
+									<br class="hide-sm" />turn complex technologies
+									into <span class="fw-bold">simple products and systems</span>, for humans.
 								</p>
 							</div>
 						</div>
 						<div class="d-flex justify-content-center col-12 mb-2">
-							<img class="wave-line lozad" data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630705886/Studio%20Branding/Design%20Materials/wave-line-primary_iscuxo.webp"/>
+							<img  alt="izometric wave line" title="" width="136" height="16" class="wave-line lozad" data-src="https://res.cloudinary.com/dwddqgedw/image/upload/v1630725479/Studio%20Branding/Design%20Materials/wave-line-primary-1x_jbgt7y.webp"/>
 						</div>
-						<div class="btn-group mt-md-5 mt-3">
+						<div class="btn-group mt-md-5 mt-4">
 							<div class="shadow-sm">
 								<a class="btn btn-lg btn-primary" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/claudiu-furca/30-minute'});return false;">Schedule Your Free Call</a>							
 							</div>
