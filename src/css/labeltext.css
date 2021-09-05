@@ -25,7 +25,6 @@
 	--move-hover: -4px;
 	--font-shadow: var(--font-size);
 	display: flex;
-	justify-content: center;
 	letter-spacing: 1px;
 	color: var(--text);
 	transform: translateY(var(--y)) translateZ(0);
