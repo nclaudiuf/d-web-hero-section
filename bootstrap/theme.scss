@@ -1,0 +1,90 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+// @import "scss/bootstrap";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$success: #7952b3;
+
+@import "scss/functions"; // Required
+@import "scss/variables"; // Required
+@import "scss/mixins"; // Required
+
+@import "scss/root"; // Required
+@import "scss/reboot"; // Required
+@import "scss/type";
+// @import "scss/images";
+// @import "scss/code";
+@import "scss/grid";
+// @import "scss/tables";
+// @import "scss/forms";
+@import "scss/buttons";
+@import "scss/transitions";
+// @import "scss/dropdown";
+// @import "scss/button-group";
+// @import "scss/input-group"; // Requires forms
+// @import "scss/custom-forms";
+// @import "scss/nav";
+// @import "scss/navbar"; // Requires nav
+// @import "scss/card";
+// @import "scss/breadcrumb";
+// @import "scss/pagination";
+// @import "scss/badge";
+// @import "scss/jumbotron";
+// @import "scss/alert";
+// @import "scss/progress";
+// @import "scss/media";
+// @import "scss/list-group";
+@import "scss/close";
+// @import "scss/toasts";
+@import "scss/modal"; // Requires transitions
+// @import "scss/tooltip";
+// @import "scss/popover";
+// @import "scss/carousel";
+// @import "scss/spinners";
+@import "scss/utilities";
+// @import "scss/print";
+
+
+//
+// Custom styles
+//
+
+//@import "icon-list";
+
+body {
+  padding: 3rem 1.5rem;
+}
+
+// Style Bootstrap icons
+.bi {
+  fill: currentColor;
+}
