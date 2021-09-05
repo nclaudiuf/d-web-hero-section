@@ -1,9 +1,6 @@
 import 'jquery';
 import 'bootstrap';
 import lozad from 'lozad';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/theme.min.css';
-import '../css/styles.css';
 
 StyleModalCard();
 Make3ShadowToText();
