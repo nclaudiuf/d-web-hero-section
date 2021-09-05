@@ -1,10 +1,5 @@
 /* @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'; */
 
-@import './css/navbar.css';
-@import './css/hero.css';
-@import './css/labeltext.css';
-@import './css/calendly.widget.css';
-
 /* Functional */
 *:hover {
 	-webkit-transition: all 0.3s ease;
