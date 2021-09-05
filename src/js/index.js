@@ -50,20 +50,19 @@ function Make3ShadowToText() {
 	}
 }
 
-const overlayImg = document.querySelector('img.content');
-const textContent = document.querySelector('.content.container');
-
 function getInTouch_Animation() {
 	const btn = document.getElementById('cta-btn');
+	const overlayImg = document.querySelector('img.content');
+	const textContent = document.querySelector('.content.container');
 
 	if (textContent !== null && overlayImg !== null && btn !== null) {
 		btn.addEventListener('mouseenter', () => {
-			textContent.classList.toggle('content--scaleDown');
-			overlayImg.classList.toggle('img--scaleUp');
+			textContent.classList.add('content--scaleDown');
+			overlayImg.classList.add('img--scaleUp');
 		});
 		btn.addEventListener('mouseleave', () => {
-			textContent.classList.toggle('content--Fallback');
-			overlayImg.classList.toggle('img--Fallback');
+			textContent.classList.add('content--Fallback');
+			overlayImg.classList.add('img--Fallback');
 
 			setTimeout(() => {
 				textContent.classList.remove('content--Fallback');
