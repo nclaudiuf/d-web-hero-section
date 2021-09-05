@@ -78,7 +78,6 @@
 	width: 19px;
 	height: 19px;
 	cursor: pointer;
-	background: url(/assets/external/close-icon.svg) no-repeat;
 	background-size: contain;
 }
 @media (max-width: 975px) {
