@@ -50,8 +50,8 @@ function Make3ShadowToText() {
 	}
 }
 
-const overlayImg = document.querySelector('.hero-image-overlay .content');
-const textContent = document.querySelector('.row .content');
+const overlayImg = document.querySelector('img.content');
+const textContent = document.querySelector('.content.container');
 
 function getInTouch_Animation() {
 	const btn = document.getElementById('cta-btn');

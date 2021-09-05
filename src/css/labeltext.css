@@ -29,6 +29,8 @@
 	transition: transform var(--duration) ease, box-shadow var(--duration) ease;
 	line-height: var(--font-size);
 	box-shadow: none;
+	outline: none;
+	text-decoration: none;
 }
 .labeltext-animated-bx {
 	--shadow: 0 2px 8px -1px rgba(18, 18, 18, 0.32);
