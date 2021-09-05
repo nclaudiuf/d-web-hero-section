@@ -2,7 +2,7 @@ import 'jquery';
 import 'bootstrap';
 import lozad from 'lozad';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/theme.css';
+import '../css/theme.min.css';
 import '../css/styles.css';
 
 StyleModalCard();
@@ -58,19 +58,19 @@ function getInTouch_Animation() {
 
 	if (textContent !== null && overlayImg !== null && btn !== null) {
 		btn.addEventListener('mouseenter', () => {
-			textContent.classList.add('content--scaleDown');
-			overlayImg.classList.add('img--scaleUp');
+			textContent.classList.toggle('content--scaleDown');
+			overlayImg.classList.toggle('img--scaleUp');
 		});
 		btn.addEventListener('mouseleave', () => {
-			textContent.classList.add('content--Fallback');
-			overlayImg.classList.add('img--Fallback');
+			textContent.classList.toggle('content--Fallback');
+			overlayImg.classList.toggle('img--Fallback');
 
 			setTimeout(() => {
 				textContent.classList.remove('content--Fallback');
 				overlayImg.classList.remove('img--Fallback');
 				textContent.classList.remove('content--scaleDown');
 				overlayImg.classList.remove('img--scaleUp');
-			}, 349);
+			}, 451);
 		});
 	}
 }

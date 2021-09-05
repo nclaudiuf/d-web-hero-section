@@ -6,6 +6,6 @@ Bundle eveyrthing using Parcel and remove unused css using PurgeCSS
 */
 
 module.exports = {
-	content: ['index.html'],
+	content: ['index.html', 'src/js/index.js'],
 	css: ['src/css/style.css']
 };
