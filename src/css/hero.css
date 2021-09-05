@@ -22,7 +22,9 @@
 		top: 6%;
 	}
 	.hero-image-overlay img {
-		opacity: 0.55 !important;
+		opacity: 0.15 !important;
+		width: 80%;
+		height: auto;
 	}
 }
 
@@ -57,12 +59,13 @@
 		transform: scale(1);
 		transform-origin: center;
 		opacity: 1;
-		z-index: -1;
+		z-index: 3;
 	}
 	100% {
 		transform: scale(0.86);
 		transform-origin: 54% 42%;
 		opacity: 0.5;
+		z-index: 1;
 	}
 }
 @keyframes content--Fallback {
@@ -70,12 +73,13 @@
 		transform: scale(0.86);
 		transform-origin: 54% 42%;
 		opacity: 0.5;
+		z-index: 1;
 	}
 	100% {
 		transform: scale(1);
 		transform-origin: center;
 		opacity: 1;
-		z-index: 9;
+		z-index: 3;
 	}
 }
 
@@ -84,12 +88,13 @@
 		transform: scale(1);
 		transform-origin: center;
 		opacity: 0.25;
-		z-index: 9;
+		z-index: 1;
 	}
 	100% {
 		transform: scale(1.12);
 		transform-origin: 51.2% 54%;
 		opacity: 0.5;
+		z-index: 3;
 	}
 }
 @keyframes img--Fallback {
@@ -97,12 +102,13 @@
 		transform: scale(1.12);
 		transform-origin: 51.2% 54%;
 		opacity: 0.5;
+		z-index: 3;
 	}
 	100% {
 		transform: scale(1);
 		transform-origin: center;
 		opacity: 0.25;
-		z-index: -1;
+		z-index: 1;
 	}
 }
 
