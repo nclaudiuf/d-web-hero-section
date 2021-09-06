@@ -6,10 +6,10 @@
 	"author": "Claudiu N. Furca https://claudiu.design",
 	"license": "ISC",
 	"scripts": {
-		"css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o src/css",
+		"css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o src/css/",
 		"css-lint": "stylelint scss/",
 		"css-prefix": "postcss --replace src/css/theme.css --use autoprefixer --map",
-		"css-purge": "purgecss --keyframes --css src/css/theme.css --content index.html \"node_modules/bootstrap/dist/js/{modal,collapse,dropdown}.js\" --output src/css",
+		"css-purge": "purgecss --keyframes --css src/css/theme.css --content index.html \"node_modules/bootstrap/dist/js/{modal,collapse,dropdown}.js\" --output src/css/",
 		"css": "npm-run-all css-compile css-prefix",
 		"start": "parcel index.html --open",
 		"build": "parcel build index.html",
